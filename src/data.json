@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "James Bond",
+    "tasks": [
+        {
+          "id": 1,
+          "name": "Build the space ship",
+          "due_date": "22.02.2019"
+        },
+        {
+          "id": 2,
+          "name": "Destroy darknet",
+          "due_date": "15.03.2019"
+        },        {
+          "id": 3,
+          "name": "Drink beer",
+          "due_date": "12.04.2019"
+        }        
+      ]
+  },
+  {
+    "id": 2,
+    "name": "Donald Trump",
+    "tasks": [
+        {
+          "id": 4,
+          "name": "Make US better",
+          "due_date": "22.03.2019"
+        },
+        {
+          "id": 5,
+          "name": "Improve economics",
+          "due_date": "25.04.2019"
+        },        {
+          "id": 6,
+          "name": "Get rest",
+          "due_date": "12.05.2019"
+        }        
+      ]
+  }
+]

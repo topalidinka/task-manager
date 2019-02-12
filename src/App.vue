@@ -1,29 +1,43 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <el-container>
+      <el-aside class="sidebar-wrapper">
+        <div class="sidebar">
+          <h3>Users</h3>
+          <Menu></Menu>
+        </div>
+      </el-aside>
+      <el-main>
+        <router-view/>
+      </el-main>
+    </el-container>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+<script>
+import Menu from '@/components/Menu.vue'
+export default {
+  components: {
+    Menu
   }
 }
+</script>
+
+<style lang="scss">
+  body {
+    margin: 0;
+  }
+  .sidebar-wrapper{
+    width: 300px;
+    background: #1D7373;
+    color: #fbffff;
+    height: 100%;
+    min-height: calc(100vh);
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 25px 0 25px 15px;
+    }
+  }
 </style>
